@@ -23,6 +23,7 @@ namespace FarmaciaGuadalupana
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

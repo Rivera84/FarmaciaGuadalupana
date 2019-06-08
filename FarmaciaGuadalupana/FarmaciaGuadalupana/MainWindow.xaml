@@ -13,27 +13,5 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="300"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="10" />
-            <ColumnDefinition Width="280"/>
-        </Grid.ColumnDefinitions>
-        <materialDesign:PackIcon Kind="Account" Grid.Column="0" Grid.Row="1" Margin="26,31,0,0" Height="25" Width="20"  />
-        <materialDesign:PackIcon Kind="Key"  Grid.Column="0" Grid.Row="1" Margin=" 25 85 0 0"/>
-        <materialDesign:Card Grid.Column="1" Grid.Row="1" Height=" 450" Background="Black"/>
-        <materialDesign:Card Grid.Column="1" Grid.Row="0" Height=" 450" Background="Black"/>
-        <!--<materialDesign:PackIcon Kind="CheckBold"  Grid.Column="0" Grid.Row="1" Margin="83,142,0,0"/>-->
-
-        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bernard MT Condensed" FontSize="50" Foreground="#DD6A2D2D" Margin="194,59,194,31"   >LOGIN</TextBlock>
-        <TextBlock Grid.Column="0" Grid.Row="1" Margin="50,30,349,244" FontFamily="Arial" FontSize=" 25" FontWeight="Bold" >Usuario:</TextBlock>
-        <TextBox Grid.Column="0" Grid.Row="1" Margin="226,26,44,244" ></TextBox>
-        <TextBlock Grid.Column="0" Grid.Row="1" Margin=" 50 80 300 190" FontFamily="Arial" FontSize="25" FontWeight="Bold" >Contraseña:</TextBlock>
-        <PasswordBox Grid.Column="0" Grid.Row="1" Margin=" 226,85,44,195"></PasswordBox>
-        <Button Grid.Column="0" Grid.Row="1" Background="Azure" Margin="83,182,300,86" Foreground="Black" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Right" >Ingresar</Button>
-        <Button Grid.Column="0" Grid.Row="1" Background="Azure" Margin="294,182,88,86" Foreground="Black" FontWeight="Bold" FontFamily="Arial" >Salir</Button>
-        </Grid>
+    </Grid>
 </Window>
