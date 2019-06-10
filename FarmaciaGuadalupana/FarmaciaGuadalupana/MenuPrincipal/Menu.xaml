@@ -39,7 +39,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackPanel  Grid.Column="0">
-                <Button Height="118" Background="Transparent"  >
+                <Button Height="118" Background="Transparent" Name="BtnUsuario" Click="Usuario"   >
                     <Grid>
                         <materialDesign:PackIcon Kind="UserAdd" Width="90" Height="90" Foreground="Black" Margin="-16,-18,-0.4,-1.6"  />
                         <TextBlock Margin="7,67,-7.4,-20.6" Foreground="Black" FontWeight="Bold" >Usuarios</TextBlock>

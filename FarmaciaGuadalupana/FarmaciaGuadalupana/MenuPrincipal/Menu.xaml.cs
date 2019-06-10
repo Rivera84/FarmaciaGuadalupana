@@ -28,5 +28,12 @@ namespace FarmaciaGuadalupana.MenuPrincipal
         {
             Application.Current.Shutdown();
         }
+
+        private void Usuario(object sender, RoutedEventArgs e)
+        {
+            Usuarios usuarios = new Usuarios();  
+            this.Hide();
+            usuarios.Show();
+        }
     }
 }
