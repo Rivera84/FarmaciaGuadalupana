@@ -13,9 +13,113 @@
         mc:Ignorable="d"
         Title="Usuarios" Height="450" Width="800" WindowStyle="None"  WindowStartupLocation="CenterScreen" AllowsTransparency="True">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*" />
 
-     
+        </Grid.RowDefinitions>
+        <!--Divición entre "Titulo y Formulario"-->
+
+        <StackPanel  Grid.Row="0">
+            
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF11A02C" Offset="0.069"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Foreground="Yellow"  VerticalAlignment="Center" FontSize="25" Content="USUARIOS" Margin="297,0,297,0" Width="132" Height="52" FontWeight="SemiBold" TextOptions.TextHintingMode="Animated" />
+
+        </StackPanel>
+        <!--Diseño de titulo-->
+        <Button Content="Atras" Background="Transparent" Margin="731,3,0,0.2" Name="BtnAtras" Click="Atras"/>
+        <Grid Grid.Row ="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--Divicion de formulario-->
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <!--Divicion de usuario-->
+                <Grid Grid.Row="0">
+                    <!--Usuario y Contrase#a-->
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,250,-20">
+                        <CheckBox Content="Admin" Margin="173,9,9.6,0"/>
+                        <Label Content="Usuario de la empresa:" Margin="10,0,83.6,0" />
+                        <CheckBox Content="User" Margin="173,0,9.9,0"/>
+                    </StackPanel>
+                    <Grid Grid.Column="1" Margin="0.4,10,0,-10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Margin="0,0,0,-10">
+                            <Label Content="Contraseña:" Margin="0,30,10,0" />
+                        </StackPanel>
+                        <StackPanel Margin="87,0,42.4,-10" Grid.ColumnSpan="2">
+                            <PasswordBox Margin="0,25,0,0"/>
+                        </StackPanel>
+
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,0,0,77.4" Grid.RowSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="309"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <!--Label-->
+                        <Label Content="Identidad:" Margin="15,25,16,0"/>
+                        <Label Content="Nombre:" Margin="15,19,16,0"/>
+                        <Label Content="Apellido:" Margin="15,19,16,0"/>
+                        <Label Content="Edad:" Margin="15,19,16,0"/>
+                        <Label Content="Fecha de ingreso:" Margin="10,19,61.2,0"/>
+
+                    </StackPanel>
+                    <StackPanel Grid.ColumnSpan="2" Margin="194,0,0,0.4">
+                        <!--TextBox-->
+                        <TextBox Margin="0,25,83.6,0"/>
+                        <TextBox Margin="0,19,83.6,0"/>
+                        <TextBox Margin="0,19,83.6,0"/>
+                        <TextBox Margin="0,19,83.6,0"/>
+                        <TextBox Margin="0,19,83.6,0"/>
+
+                    </StackPanel>
+
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,234,0,0.4" Grid.RowSpan="2">
+                    <!--Botones-->
+                    <Button Content="Buscar" Margin="43,34,366,34"/>
+                    <Button Content="Editar" Margin="195,34,214,34"/>
+                    <Button Content="Eliminar" Margin="348,34,61,34"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <!--Imagen-->
+                <Image Source="/Login/Imagen/Logo.jpeg" Margin="0,-11,0,10.4"/>
+            </Grid>
+
+
+
+
+
+        </Grid>
+
+
 
     </Grid>
 </Window>

@@ -23,5 +23,12 @@ namespace FarmaciaGuadalupana
         {
             InitializeComponent();
         }
+
+        private void Atras(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal.Menu menu = new MenuPrincipal.Menu();
+            this.Hide();
+            menu.Show();
+        }
     }
 }
